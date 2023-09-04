@@ -1,0 +1,14 @@
+Image Processor
+Applying filters to your photos.
+Only 24-bit .bmp files supported.
+How to use?
+The command must be entered in the following format: ./image_processor input.bmp output.bmp -[filter1] {arg1_1}... {arg1_n}...-[filter2] {arg2_1}...{arg2_k}...
+Argument list can be empty. The input file will be written to the output file.
+Filters are applied in the order they are listed.
+For example: ./image_processor input.bmp /tmp/output.bmp -crop 800 600 -gs -blur 0.5
+Commands:
+  1. Crop filter          (-crop width height)
+  2. Grayscale filter     (-gs)
+  3. Negative filter      (-neg)
+  4. Sharpening filter    (-sharp)
+  5. Edge Detection       (-edge threshold)
